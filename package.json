@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/kongnet/cc-jt/issues"
   },
-  "homepage": "https://github.com/kongnet/cc-jt#readme"
+  "homepage": "https://github.com/kongnet/cc-jt#readme",
+  "devDependencies": {
+    "cz-jt": "^0.1.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-jt"
+    }
+  }
 }

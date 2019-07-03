@@ -965,6 +965,7 @@ module.exports = {
     // generator 函数内必须有 yield
     'require-yield': 'off',
     // @fixable ... 的后面禁止有空格
+    'require-atomic-updates': 'off',
     'rest-spread-spacing': [
       'off',
       'never'
