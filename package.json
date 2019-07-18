@@ -27,7 +27,5 @@
       "path": "./node_modules/cz-jt"
     }
   },
-  "dependencies": {
-    "babel-eslint": "^10.0.2"
-  }
+  "dependencies": {}
 }
