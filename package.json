@@ -4,6 +4,7 @@
   "description": "Cyclomatic complexity config for jiatui.com",
   "main": "cc-jt.js",
   "scripts": {
+    "cz": "git add . && git status && git cz && npm-publish-bin && npm version patch && npm publish .",
     "patch": "git add . && git commit -m:pencil2: && npm version patch && npm publish .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,11 +19,15 @@
   },
   "homepage": "https://github.com/kongnet/cc-jt#readme",
   "devDependencies": {
-    "cz-jt": "^0.1.7"
+    "cz-jt": "^0.1.7",
+    "npm-publish-bin": "^1.0.0"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-jt"
     }
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.2"
   }
 }
