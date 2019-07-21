@@ -167,7 +167,7 @@ module.exports = {
     'class-methods-use-this': 'off',
     // 禁止函数的循环复杂度超过 20，https://en.wikipedia.org/wiki/Cyclomatic_complexity
     'complexity': [
-      'warn',
+      'off',
       {
         max: 1
       }
