@@ -27,5 +27,8 @@
       "path": "./node_modules/cz-jt"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-vue": "^5.2.3"
+  }
 }
