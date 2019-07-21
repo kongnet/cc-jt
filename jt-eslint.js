@@ -269,7 +269,7 @@ module.exports = {
     'no-shadow': 0,
     // 禁止覆盖受限制的标识符
     'no-shadow-restricted-names': 2,
-    // 禁用未声明的变量，除非它们在 /*global */ 注释中被提到
+    // 禁用未声明的变量，除非它们在 /*global */ 注释中被提到 暂时关闭，在开发过程中有ide环境提供检测
     'no-undef': 0,
     // 禁止将变量初始化为 undefined
     'no-undef-init': 2,
