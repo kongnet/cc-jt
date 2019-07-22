@@ -552,5 +552,6 @@ for (let i in o['rules']) {
     }
   }
 }
+o.rules.jtStat=[errorCount, warnCount]
 module.exports = o
 // console.log('强制规则条数:',errorCount,'警告规则条数:',warnCount)
