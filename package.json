@@ -2,7 +2,7 @@
   "name": "cc-jt",
   "version": "0.1.14",
   "description": "Cyclomatic complexity config for jiatui.com",
-  "main": "cc-jt.js",
+  "main": "index.js",
   "scripts": {
     "cz": "git add . && git status && git cz && npm-publish-bin && npm version patch && npm publish .",
     "patch": "git add . && git commit -m:pencil2: && npm version patch && npm publish .",
