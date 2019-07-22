@@ -548,7 +548,7 @@ for (let i in o['rules']) {
     }
   }
 }
-o.rules.jtStat=[errorCount, warnCount]
+
 module.exports = {
   ccc: o,
   jtStat: {
