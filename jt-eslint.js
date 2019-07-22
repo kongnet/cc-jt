@@ -1,6 +1,6 @@
 let [errorCount, warnCount] = [0, 0]
 let o = {
-  parser: 'babel-eslint',
+  parser: require.resolve('babel-eslint'),
   // 环境定义了预定义的全局变量。
   env: {
     // 环境定义了预定义的全局变量。更多在官网查看
