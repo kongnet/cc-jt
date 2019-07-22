@@ -1,6 +1,6 @@
 {
   "name": "cc-jt",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "Cyclomatic complexity config for jiatui.com",
   "main": "index.js",
   "scripts": {
