@@ -527,10 +527,6 @@ let o = {
     'template-curly-spacing': 1,
     // 强制在 yield* 表达式中 * 周围使用空格
     'yield-star-spacing': 2
-  },
-  jtStat: {
-    errorCount,
-    warnCount
   }
 }
 for (let i in o['rules']) {
@@ -553,5 +549,11 @@ for (let i in o['rules']) {
   }
 }
 o.rules.jtStat=[errorCount, warnCount]
-module.exports = o
+module.exports = {
+  ccc: o,
+  jtStat: {
+    errorCount,
+    warnCount
+  }
+}
 // console.log('强制规则条数:',errorCount,'警告规则条数:',warnCount)
