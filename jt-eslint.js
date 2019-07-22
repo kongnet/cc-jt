@@ -528,7 +528,7 @@ let o = {
     // 强制在 yield* 表达式中 * 周围使用空格
     'yield-star-spacing': 2
   },
-  stat: {
+  jtStat: {
     errorCount,
     warnCount
   }
