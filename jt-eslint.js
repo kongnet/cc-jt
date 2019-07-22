@@ -4,11 +4,7 @@ module.exports = {
   env: {
     // 环境定义了预定义的全局变量。更多在官网查看
     browser: true,
-    node: true,
-    commonjs: true,
-    amd: true,
-    es6: true,
-    mocha: true
+    node: true
   },
   plugins: [ 'html', 'vue' ],
   settings: {
@@ -270,7 +266,7 @@ module.exports = {
     // 禁止覆盖受限制的标识符
     'no-shadow-restricted-names': 2,
     // 禁用未声明的变量，除非它们在 /*global */ 注释中被提到 暂时关闭，在开发过程中有ide环境提供检测
-    'no-undef': 0,
+    'no-undef': 2,
     // 禁止将变量初始化为 undefined
     'no-undef-init': 2,
     // 禁止将 undefined 作为标识符
@@ -363,7 +359,7 @@ module.exports = {
     // 强制标识符的最新和最大长度
     'id-length': [2, { min: 1, max: 20 }],
     // 要求标识符匹配一个指定的正则表达式
-    'id-match': 0, // [2, '(^[A-Za-z]+(?:[A-Z][a-z]*)*\d*$)|(^[A-Z]+(_[A-Z]+)*(_\d$)*$)|(^(_|\$)$)'],
+    'id-match': 0, // [2, '(^[A-Za-z]+(?:[A-Z][a-z]*)*\d*$)|(^[A-Z]+(_[A-Z]+)*(_\d$)*$)|(^(_|\$)$)'], DDD_DDD_2 asdfDfdf c1 复杂度cc 规模检测
     // 强制在 JSX 属性中一致地使用双引号或单引号
     'jsx-quotes': 0,
     // 强制在关键字前后使用一致的空格 (前后腰需要)
