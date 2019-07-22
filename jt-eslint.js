@@ -1,4 +1,5 @@
-module.exports = {
+let [errorCount, warnCount] = [0, 0]
+let o = {
   parser: 'babel-eslint',
   // 环境定义了预定义的全局变量。
   env: {
@@ -327,7 +328,7 @@ module.exports = {
     'func-names': 0,
     // 文件末尾强制换行
     'eol-last': 2,
-    indent: ['error', 2, {
+    indent: [2, 2, {
       SwitchCase: 1,
       VariableDeclarator: 1,
       outerIIFEBody: 1,
@@ -526,5 +527,30 @@ module.exports = {
     'template-curly-spacing': 1,
     // 强制在 yield* 表达式中 * 周围使用空格
     'yield-star-spacing': 2
+  },
+  stat: {
+    errorCount,
+    warnCount
   }
 }
+for (let i in o['rules']) {
+  let val = o['rules'][i]
+  if (typeof val === 'number') {
+    if (val === 2) {
+      errorCount++
+    }
+    if (val === 1) {
+      warnCount++
+    }
+  }
+  if (typeof val === 'object') {
+    if (val[0] === 2) {
+      errorCount++
+    }
+    if (val[1] === 1) {
+      warnCount++
+    }
+  }
+}
+module.exports = o
+// console.log('强制规则条数:',errorCount,'警告规则条数:',warnCount)

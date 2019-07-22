@@ -1,4 +1,4 @@
-﻿/**
+/**
  * AlloyTeam ESLint 规则
  *
  * 包含所有 ESLint 规则
