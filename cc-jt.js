@@ -10,6 +10,11 @@ module.exports = {
       modules: true
     }
   },
+  plugins: [ 'html', 'vue' ],
+  settings: {
+    'html/html-extensions': ['.html', '.htm', '.we'], // consider .html and .we files as HTML
+    'vue/vue-extensions': ['.vue']
+  },
   env: {
     browser: true,
     node: true,
