@@ -16,7 +16,7 @@ let o = {
   parserOptions: {
     // ECMAScript 版本
     ecmaVersion: 2018,
-    sourceType: 'script', // module
+    sourceType: 'module', // module script
     // 想使用的额外的语言特性:
     ecmaFeatures: {
       // 允许在全局作用域下使用 return 语句
@@ -358,7 +358,7 @@ let o = {
     // 禁止使用指定的标识符
     'id-blacklist': 0,
     // 强制标识符的最新和最大长度
-    'id-length': [2, { min: 1, max: 20 }],
+    'id-length': [1, { min: 1, max: 20 }],
     // 要求标识符匹配一个指定的正则表达式
     'id-match': 0, // [2, '(^[A-Za-z]+(?:[A-Z][a-z]*)*\d*$)|(^[A-Z]+(_[A-Z]+)*(_\d$)*$)|(^(_|\$)$)'], DDD_DDD_2 asdfDfdf c1 复杂度cc 规模检测
     // 强制在 JSX 属性中一致地使用双引号或单引号
