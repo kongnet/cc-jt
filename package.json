@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "eslint-plugin-html": "*",
-    "eslint-plugin-vue": "*"
+    "eslint-plugin-vue": "6.1.0"
   }
 }
