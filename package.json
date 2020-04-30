@@ -6,7 +6,9 @@
   "scripts": {
     "cz": "git add . && git status && git cz && npm-publish-bin && npm version patch && npm publish .",
     "patch": "git add . && git commit -m:pencil2: && npm version patch && npm publish .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -39,6 +41,8 @@
   },
   "dependencies": {
     "eslint-plugin-html": "*",
-    "eslint-plugin-vue": "*"
-  }
+    "eslint-plugin-vue": "*",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
